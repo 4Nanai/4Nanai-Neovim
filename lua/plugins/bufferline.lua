@@ -31,6 +31,8 @@ return {
 		{ "<leader>bl", ":BufferLineCycleNext<CR>", silent = true, desc = "Buffer Right" },
 		{ "<leader>bp", ":BufferLinePick<CR>", silent = true, desc = "Buffer Pick" },
 		{ "<leader>bd", ":bdelete<CR>", silent = true, desc = "Buffer Delete" },
+        { "<leader><Left>", ":BufferLineMovePrev<CR>", silent = true, desc = "Buffer Move Left" },
+        { "<leader><Right>", ":BufferLineMoveNext<CR>", silent = true, desc = "Buffer Move Right" },
 	},
 	lazy = false,
 }
