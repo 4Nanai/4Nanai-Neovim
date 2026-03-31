@@ -15,7 +15,6 @@ if not is_vscode then
 
 	-- redo and undo
 	vim.keymap.set({ "n", "i" }, "<C-z>", "<Cmd>undo<CR>", { silent = true })
-	vim.keymap.set({ "n", "i" }, "<C-Z>", "<Cmd>redo<CR>", { silent = true })
 end
 
 -- vscode keymaps
