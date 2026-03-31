@@ -18,14 +18,21 @@ return {
 		end
 
 		install("stylua")
-        install("black")
-        install("shfmt")
+		install("black")
+		install("shfmt")
+		install("prettier")
+
 		local null_ls = require("null-ls")
 		null_ls.setup({
 			sources = {
 				null_ls.builtins.formatting.stylua,
-                null_ls.builtins.formatting.black,
-                null_ls.builtins.formatting.shfmt,
+				null_ls.builtins.formatting.black,
+				null_ls.builtins.formatting.shfmt,
+				null_ls.builtins.formatting.prettier.with({
+					extra_args = function(params)
+						return { "--stdin-filepath", params.bufname }
+					end,
+				}),
 			},
 		})
 	end,
@@ -33,7 +40,7 @@ return {
 		{
 			"<leader>lf",
 			vim.lsp.buf.format,
-            desc = "Format code",
+			desc = "Format code",
 		},
 	},
 }

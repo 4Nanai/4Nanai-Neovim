@@ -22,3 +22,11 @@ vim.opt.timeout = false
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.nrformats = "bin,hex,alpha"
+
+vim.filetype.add(
+    {
+        pattern = {
+            [".*docker%-compose%.y[a]?ml"] = "yaml",
+        }
+    }
+)

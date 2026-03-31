@@ -41,6 +41,7 @@ return {
             pyright = {},
             ["typescript-language-server"] = {},
             ["bash-language-server"] = {},
+            ["docker-compose-language-service"] = {},
         }
 
         for server, config in pairs(servers) do
