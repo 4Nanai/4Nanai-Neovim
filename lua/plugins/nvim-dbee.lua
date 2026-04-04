@@ -13,4 +13,7 @@ return {
 		require("dbee").setup(--[[optional config]])
 	end,
     event = "VeryLazy",
+    keys = {
+        { "<leader>db", "<cmd>lua require('dbee').toggle()<CR>", desc = "Open DBEE" },
+    }
 }
