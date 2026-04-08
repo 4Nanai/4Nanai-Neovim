@@ -1,5 +1,3 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
@@ -13,7 +11,6 @@ return {
         },
     },
     cmd = "Telescope",
-    cond = not is_vscode,
     opts = {
         extensions = {
             fzf = {

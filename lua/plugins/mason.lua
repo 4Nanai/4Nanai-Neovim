@@ -1,5 +1,3 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
     "mason-org/mason.nvim",
     event = "VeryLazy",
@@ -8,7 +6,6 @@ return {
         "mason-org/mason-lspconfig.nvim",
     },
     opts = {},
-    cond = not is_vscode,
     config = function(_, opts)
         require("mason").setup(opts)
         local registry = require("mason-registry")

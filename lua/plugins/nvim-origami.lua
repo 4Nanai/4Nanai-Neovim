@@ -1,9 +1,6 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
 	"chrisgrieser/nvim-origami",
 	event = "VeryLazy",
-    cond = not is_vscode,
 	opts = {
 		useLspFoldsWithTreesitterFallback = {
 			enabled = true,

@@ -1,8 +1,5 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
 	"christoomey/vim-tmux-navigator",
-    cond = not is_vscode,
 	cmd = {
 		"TmuxNavigateLeft",
 		"TmuxNavigateDown",

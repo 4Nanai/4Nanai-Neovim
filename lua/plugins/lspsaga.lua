@@ -1,9 +1,6 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
 	"nvimdev/lspsaga.nvim",
 	cmd = "Lspsage",
-    cond = not is_vscode,
 	opts = {
 		finder = {
 			keys = {

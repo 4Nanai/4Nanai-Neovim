@@ -1,10 +1,7 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {},
-    cond = not is_vscode,
     config = function (_, opts)
         local wk = require("which-key")
         wk.setup(opts)

@@ -1,8 +1,5 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
     "github/copilot.vim",
-    cond = not is_vscode,
     config = function ()
         vim.g.copilot_no_tab_map = true
         vim.keymap.set("i", "<S-Tab>", 'copilot#Accept("\\<S-Tab>")', { expr = true, replace_keycodes = false })

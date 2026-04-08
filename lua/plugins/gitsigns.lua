@@ -1,12 +1,8 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
 
 	"lewis6991/gitsigns.nvim",
 
 	event = "VeryLazy",
-
-    cond = not is_vscode,
 
 	opts = {
 

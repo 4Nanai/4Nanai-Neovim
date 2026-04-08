@@ -1,12 +1,9 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
     "saghen/blink.cmp",
     version = "*",
     dependencies = {
         "rafamadriz/friendly-snippets"
     },
-    cond = not is_vscode,
     event = "VeryLazy",
     opts = {
         completion = {

@@ -1,11 +1,8 @@
-local is_vscode = vim.g.vscode ~= nil
-
 return {
 	"nvimtools/none-ls.nvim",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
-	cond = not is_vscode,
 	event = "VeryLazy",
 	config = function()
 		local registry = require("mason-registry")
