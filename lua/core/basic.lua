@@ -20,13 +20,14 @@ vim.opt.hlsearch = false
 vim.opt.showmode = false
 vim.opt.timeout = false
 
+if vim.env.TMUX then
+    vim.g.clipboard = "tmux"
+end
 vim.opt.clipboard = "unnamedplus"
 vim.opt.nrformats = "bin,hex,alpha"
 
-vim.filetype.add(
-    {
-        pattern = {
-            [".*docker%-compose%.y[a]?ml"] = "yaml",
-        }
-    }
-)
+vim.filetype.add({
+	pattern = {
+		[".*docker%-compose%.y[a]?ml"] = "yaml",
+	},
+})
