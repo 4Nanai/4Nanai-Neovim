@@ -18,7 +18,7 @@ vim.opt.smartcase = true
 vim.opt.hlsearch = false
 
 vim.opt.showmode = false
-vim.opt.timeout = false
+-- vim.opt.timeout = false
 
 if vim.env.TMUX then
     vim.g.clipboard = "tmux"

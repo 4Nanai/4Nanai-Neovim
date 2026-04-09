@@ -15,3 +15,6 @@ vim.keymap.set("n", "<leader>wl", "<Cmd>wincmd l<CR>", { silent = true })
 vim.keymap.set({ "n", "i" }, "<C-z>", "<Cmd>undo<CR>", { silent = true })
 vim.keymap.set({ "n", "i" }, "<C-r>", "<Cmd>redo<CR>", { silent = true })
 vim.keymap.set( "n", "u", "<Nop>", { noremap = true, silent = true })
+
+-- toggleterm
+vim.keymap.set("t", "<esc><esc>", [[<C-\><C-n>]], { silent = true })
