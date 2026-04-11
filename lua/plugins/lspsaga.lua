@@ -8,7 +8,7 @@ return {
 			},
 		},
         lightbulb = {
-            enable = true,
+            enable = false,
             sign = false,
             debounce = 10,
         }
