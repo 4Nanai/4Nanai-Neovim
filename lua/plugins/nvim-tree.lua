@@ -20,7 +20,7 @@ return {
             git_ignored = false,
             dotfiles = false,
             custom = {
-                ".git",
+                "^%.git$",
                 "node_modules",
                 ".cache",
             }
