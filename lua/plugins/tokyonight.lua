@@ -2,6 +2,7 @@ return {
     "folke/tokyonight.nvim",
     opts = {
         style = "moon",
+        transparent = true,
         on_highlights = function (hl, c)
             local LineNrColor = "#8389a3"
 
