@@ -15,6 +15,9 @@ return {
             hl.LineNrBelow = {
                 fg = LineNrColor,
             }
+            hl.DiagnosticUnnecessary = {
+                fg = "#828bb8",
+            }
         end,
     },
     config = function(_, opts)
