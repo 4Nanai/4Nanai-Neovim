@@ -27,7 +27,8 @@ return {
 		{ "<leader>bh", ":BufferLineCyclePrev<CR>", silent = true, desc = "Buffer Left" },
 		{ "<leader>bl", ":BufferLineCycleNext<CR>", silent = true, desc = "Buffer Right" },
 		{ "<leader>bp", ":BufferLinePick<CR>", silent = true, desc = "Buffer Pick" },
-		{ "<leader>bd", ":bdelete<CR>", silent = true, desc = "Buffer Delete" },
+        -- Use snacks.bufdelete for better buffer deletion
+		-- { "<leader>bd", ":bdelete<CR>", silent = true, desc = "Buffer Delete" },
         { "<leader>by", ":BufferLineMovePrev<CR>", silent = true, desc = "Buffer Move Left" },
         { "<leader>bo", ":BufferLineMoveNext<CR>", silent = true, desc = "Buffer Move Right" },
 	},
